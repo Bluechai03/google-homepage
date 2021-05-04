@@ -40,6 +40,7 @@ a {
 
 input {
   all: unset;
+  margin-left: 0.75rem;
 }
 
 .wrapper {
@@ -117,6 +118,13 @@ header {
     padding: 0.7em 1.7em;
     --clr-primary: #1a73e8;
     --clr-text: #fff;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.9;
+      box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3),
+        0 1px 3px 1px rgba(66, 133, 244, 0.15);
+    }
   }
 }
 
@@ -131,6 +139,12 @@ header {
 
   .language {
     color: #1a0dab;
+  }
+
+  .btn:hover {
+    text-decoration: none;
+    outline: 1px solid #dfe1e5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -175,7 +189,7 @@ header {
   }
 
   .section {
-    padding: 1rem 1.5em;
+    padding: 1rem 1.75em;
   }
 
   &__section--top {
@@ -186,8 +200,15 @@ header {
     justify-content: space-between;
   }
 
-  ul {
+  &__list {
     display: flex;
     gap: 1.5rem;
+    @media screen and (max-width: 39em) {
+      margin: 0 auto;
+
+      &--right {
+        margin-top: 2em;
+      }
+    }
   }
 }
