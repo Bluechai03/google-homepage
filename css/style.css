@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row nowrap;
+}
+
+.nav__img {
+  border-radius: 100vh;
+}
+
+.stack > * + * {
+  margin-top: 1.75em;
+}
+/*# sourceMappingURL=style.css.map */
