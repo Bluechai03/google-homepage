@@ -74,11 +74,11 @@ input {
 }
 
 .container {
-  width: 95%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   height: 100vh;
 }
 
@@ -92,7 +92,7 @@ header {
   justify-content: flex-end;
   flex-flow: row nowrap;
   margin-top: 0.75em;
-
+  padding: 0 1.75em;
   &__list {
     display: flex;
     align-items: center;
@@ -130,9 +130,7 @@ header {
 
 // Main
 .main {
-  margin: 0.75rem auto;
   max-width: 1024px;
-
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -177,8 +175,6 @@ header {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background: rgba(226, 226, 226, 0.54);
 
